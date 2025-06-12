@@ -1,63 +1,115 @@
-# Welcome to your RepoRank project
 
-## Project info
+# 🧠 RepoRank  
+**GitHub trends decoded. MVPs accelerated.**  
+Built with Google Vertex AI for the AI in Action Hackathon
 
-**URL**: 
+---
 
-## How can I edit this code?
+## 🔍 What is RepoRank?
 
-There are several ways of editing your application.
+**RepoRank** helps developers turn ideas into MVPs by analyzing public GitHub repositories at scale. It surfaces rising projects, explains why they’re trending, and distills reusable components—powered by LLMs.
 
-**Use your preferred IDE**
+You can:
+- Search repos with natural language
+- Filter by time (daily → all-time)
+- Summarize components (auth, data model, etc.)
+- Export blueprints for faster dev
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Live Demo
+👉 [reporank.ai](https://reporank.ai) *(insert actual link)*
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧰 Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🖥️ Frontend
+- **Next.js** + **TypeScript**
+- **Tailwind CSS** + **shadcn/ui**
+- **Framer Motion** (animations)
+- Gradient + minimalist layout inspired by OpenAI
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🔧 Backend
+- **Node.js** + **Express**
+- **MongoDB Atlas** (with Vector Search for semantic repo search)
+- **Google Vertex AI (Gemini)** for:
+  - Summarizing repo architecture
+  - Extracting MVP components
+  - Clustering topics via embeddings
+- **LangChain** for LLM-based RAG pipelines
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 📦 Features
+
+### 🔎 Trend Discovery
+- Tracks fast-growing repos using GitHub public data (GH Archive + REST API)
+- Supports semantic time filtering:
+  - Daily, Weekly, Last 2 Weeks, Monthly, Last 6 Months, Year, All Time
+- Displays stars (⭐ yellow) and forks (🍴 orange)
+- At least 30 trending repos per time range
+
+### 🤖 MVP Helper
+- Input: “I want to build a journaling app”
+- Output:
+  - Key components extracted from similar repos
+  - Suggested architecture (routes, DB, auth, deployment)
+  - Exportable code templates (coming soon)
+
+---
+
+## 🛠️ Getting Started
+
+### 🔌 Backend (Node + Express)
+
+```bash
+cd backend
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+- Requires MongoDB Atlas URL and Vertex AI key in `.env`
+```
+MONGODB_URI=your_mongo_uri
+VERTEX_API_KEY=your_google_vertex_key
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### 💻 Frontend (Next.js + Tailwind)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## What technologies are used for this project?
+- Uses `/api` routes to communicate with backend
+- Update `.env.local` with your API endpoints if deploying separately
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🧪 Sample Query
 
-## How can I deploy this project?
+```http
+POST /api/search
+{
+  "query": "show me LLM agents for browser automation",
+  "timeRange": "last_2_weeks"
+}
+```
 
-You can deploy this project using your preferred platform (e.g., Netlify, Vercel).
+Returns a ranked list of GitHub repos with summaries, stars, forks, and links.
 
-## I want to use a custom domain - is that possible?
+---
 
-You can use custom domains with your deployment provider. Visit their docs for more details.
+## 👥 Team
+
+- Kedaar Rentachintala – Product + Fullstack
+- [Add teammates here]
+
+---
+
+## 📜 License
+MIT License
