@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { TrendingUp, Search, Zap, Code, GitBranch, Star } from "lucide-react";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-gradient-blue to-gradient-purple/20">
         <div className="section-container text-center">
@@ -23,10 +20,7 @@ const Home = () => {
           </p>
           
           <div className="flex justify-center">
-            <Link 
-              to="/trends"
-              className="inline-flex items-center px-8 py-4 bg-gradient-primary text-white font-semibold rounded-full hover:shadow-medium transition-all duration-300 transform hover:scale-105"
-            >
+            <Link to="/trends" className="inline-flex items-center px-8 py-4 bg-gradient-primary text-white font-semibold rounded-full hover:shadow-medium transition-all duration-300 transform hover:scale-105">
               <TrendingUp className="mr-2 w-5 h-5" />
               Explore Trends
             </Link>
@@ -87,37 +81,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="section-container">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="stats-card">
-              <div className="flex items-center justify-center mb-4">
-                <GitBranch className="w-8 h-8 text-brand-600 mr-2" />
-                <span className="text-3xl font-bold text-brand-900">2.5M+</span>
-              </div>
-              <p className="text-brand-600">Repos Analyzed</p>
-            </div>
-
-            <div className="stats-card">
-              <div className="flex items-center justify-center mb-4">
-                <Star className="w-8 h-8 text-yellow-500 mr-2" />
-                <span className="text-3xl font-bold text-brand-900">50K+</span>
-              </div>
-              <p className="text-brand-600">Daily Trend Updates</p>
-            </div>
-
-            <div className="stats-card">
-              <div className="flex items-center justify-center mb-4">
-                <Code className="w-8 h-8 text-brand-600 mr-2" />
-                <span className="text-3xl font-bold text-brand-900">500+</span>
-              </div>
-              <p className="text-brand-600">MVP Templates</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+      
+    </div>;
 };
-
 export default Home;
