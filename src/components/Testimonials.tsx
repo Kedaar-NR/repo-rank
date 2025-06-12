@@ -10,27 +10,27 @@ interface TestimonialProps {
 }
 
 const testimonials: TestimonialProps[] = [{
-  content: "Atlas transformed our production line, handling repetitive tasks while our team focuses on innovation. 30% increase in output within three months.",
+  content: "Kedaar's innovative approach to repository discovery has streamlined our development workflow. Finding relevant codebases is now effortless.",
   author: "Sarah Chen",
-  role: "VP of Operations, Axion Manufacturing",
+  role: "Senior Developer, Tech Innovations",
   gradient: "from-blue-700 via-indigo-800 to-purple-900",
   backgroundImage: "/background-section1.png"
 }, {
-  content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
+  content: "The AI-powered features developed by Kedaar have revolutionized how we approach MVP development. Incredible attention to detail and user experience.",
   author: "Michael Rodriguez",
-  role: "Director of Logistics, GlobalShip",
+  role: "Product Manager, StartupHub",
   gradient: "from-indigo-900 via-purple-800 to-orange-500",
   backgroundImage: "/background-section2.png"
 }, {
-  content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
+  content: "Working with Kedaar's platform has accelerated our research process. The intelligent repository recommendations are spot-on every time.",
   author: "Dr. Amara Patel",
-  role: "Lead Scientist, BioAdvance Research",
+  role: "Research Lead, DevTech Labs",
   gradient: "from-purple-800 via-pink-700 to-red-500",
   backgroundImage: "/background-section3.png"
 }, {
-  content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
+  content: "Kedaar's expertise in full-stack development shines through this platform. It's exactly what the developer community needed.",
   author: "Jason Lee",
-  role: "CEO, Innovative Solutions Inc.",
+  role: "CTO, CodeCraft Solutions",
   gradient: "from-orange-600 via-red-500 to-purple-600",
   backgroundImage: "/background-section1.png"
 }];
