@@ -107,7 +107,6 @@ Returns a ranked list of GitHub repos with summaries, stars, forks, and links.
 ## 👥 Team
 
 - Kedaar Rentachintala – Product + Fullstack
-- [Add teammates here]
 
 ---
 
